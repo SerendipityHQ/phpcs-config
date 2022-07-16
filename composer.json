@@ -1,0 +1,26 @@
+{
+    "name": "serendipity_hq/phpcs-config",
+    "description": "Custom configuration for PHP CS Fixer used by Serendipity HQ.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["phpcs", "php cs fixer", "phpcs fixer", "php cs"],
+    "homepage": "https://github.com/SerendipityHQ/phpcs-config",
+    "authors": [
+        {
+            "name": "Adamo Aerendir Crespi",
+            "email": "aerendir@serendipityhq.com"
+        }
+    ],
+    "require-dev": {
+        "php": "^7.4|^8.0",
+        "friendsofphp/php-cs-fixer": "3.8.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "SerendipityHQ\\Integration\\PhpCsFixer\\": "src/"
+        }
+    }
+}
