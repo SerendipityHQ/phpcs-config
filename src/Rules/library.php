@@ -12,13 +12,11 @@ return [
     'blank_line_before_statement'            => true,
     'class_attributes_separation'            => [
         'elements' => [
-            [
-                'const' => 'none',
-                'method' => 'one',
-                'property' => 'none',
-                'trait_import' => 'none',
-                'case' => 'none',
-                ],
+            'const' => 'none',
+            'method' => 'one',
+            'property' => 'none',
+            'trait_import' => 'none',
+            'case' => 'none',
             ],
         ],
     'combine_consecutive_unsets'             => true,
