@@ -89,6 +89,15 @@ return [
         'property' => 'single',
     ],
     'phpdoc_order'                           => true,
+    'phpdoc_separation'                      => [
+        'groups' => [
+            ['deprecated', 'link', 'see', 'since'],
+            ['author', 'copyright', 'license'],
+            ['category', 'package', 'subpackage'],
+            ['property', 'property-read', 'property-write'],
+            ['ORM\MappedSuperclass', 'ORM\HasLifecycleCallbacks'],
+        ]
+    ],
     'phpdoc_to_comment'                      => false,
     'phpdoc_types_order'                     => [
         'null_adjustment' => 'always_last',
