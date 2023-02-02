@@ -95,7 +95,7 @@ return [
             ['author', 'copyright', 'license'],
             ['category', 'package', 'subpackage'],
             ['property', 'property-read', 'property-write'],
-            ['ORM\MappedSuperclass', 'ORM\HasLifecycleCallbacks'],
+            ['ORM\*'],
         ]
     ],
     'phpdoc_to_comment'                      => false,
