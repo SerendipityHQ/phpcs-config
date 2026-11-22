@@ -11,9 +11,10 @@
             "email": "aerendir@serendipityhq.com"
         }
     ],
-    "require-dev": {
+    "require": {
         "php": "^7.4|^8.0",
-        "friendsofphp/php-cs-fixer": "3.8.0"
+        "friendsofphp/php-cs-fixer": "^3.95.5",
+        "kubawerlos/php-cs-fixer-custom-fixers": "^3.37.5"
     },
     "config": {
         "sort-packages": true
