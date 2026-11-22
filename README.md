@@ -68,9 +68,12 @@ return $config
     ->setUsingCache(true)
     ->setCacheFile(__DIR__.'/var/cache/.php_cs.cache')
     ->setRiskyAllowed(true)
+    ->registerCustomFixers(new PhpCsFixerCustomFixers\Fixers())
     ->setRules($rules);
 
 ```
+
+The rules include three fixers of [`kubawerlos/php-cs-fixer-custom-fixers`](https://github.com/kubawerlos/php-cs-fixer-custom-fixers), which this library requires: the configuration must register them with `registerCustomFixers(new PhpCsFixerCustomFixers\Fixers())`, as above, or PHP CS Fixer refuses the rules it does not know.
 
 To change the rules or their configuration on a per-project basis, simply edit the `$rule` variable and then pass it to the `Config::setRues()` method.
 
