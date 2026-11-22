@@ -3,6 +3,7 @@
 return [
     '@Symfony'                               => true,
     'align_multiline_comment'                => true,
+    'array_indentation'                      => true,
     'array_syntax'                           => [
         'syntax' => 'short',
     ],
@@ -43,6 +44,7 @@ return [
     'list_syntax'                            => [
         'syntax' => 'short',
         ],
+    'multiline_promoted_properties'          => true,
     'multiline_whitespace_before_semicolons' => false,
     'no_null_property_initialization'        => true,
     'no_superfluous_phpdoc_tags'             => [
@@ -97,4 +99,10 @@ return [
     'phpdoc_var_without_name'                => false,
     'single_line_comment_style'              => true,
     'strict_comparison'                      => true,
+    'trailing_comma_in_multiline'            => [
+        'elements' => ['arrays', 'arguments', 'parameters'],
+    ],
+    \PhpCsFixerCustomFixers\Fixer\ConstructorEmptyBracesFixer::name()      => true,
+    \PhpCsFixerCustomFixers\Fixer\NoTrailingCommaInSinglelineFixer::name() => true,
+    \PhpCsFixerCustomFixers\Fixer\NoUselessCommentFixer::name()            => true,
 ];
